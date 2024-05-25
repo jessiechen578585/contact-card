@@ -8,12 +8,11 @@ Write a responsive “Contacts” application that allows the user to browse the
 •	Provide instructions on how to run the code
 
 
+# Deployment Website:
+https://contact-card-eight.vercel.app/
 
 
-
-# From Jessie Mingxia Chen:
-
-    # Instruction on how to run the code
+# Instruction on how to run the code
     1. Make sure you have Node.js and npm (Node Package Manager) installed on your machine: https://nodejs.org/en/download/package-manager 
 
     2. Install the required dependencies by running: npm install
