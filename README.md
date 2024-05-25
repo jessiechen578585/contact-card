@@ -1,70 +1,35 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Q2: Real world problem 
+Write a responsive “Contacts” application that allows the user to browse their contacts:
+•	Make use of https://jsonplaceholder.typicode.com/ (/users are the contacts)
+•	Use either VueJS, Angular or React
+•	Make it visually appealing
+•	No need to implement Create/Update/Delete
+•	Provide instructions on how to run the code
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# From Jessie Mingxia Chen:
 
-### `npm test`
+    # Instruction on how to run the code
+    1. Make sure you have Node.js and npm (Node Package Manager) installed on your machine: https://nodejs.org/en/download/package-manager 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    2. Install the required dependencies by running: npm install
+    3. Start the development server: npm start ( or npm run dev)
+    4. Open your browser and visit http://localhost:3000
 
-### `npm run build`
+1. useState and useEffect are used from React to manage state and perform side effects
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. useEffect is used to fetch the contacts from the API (https://jsonplaceholder.typicode.com/users) when the component mounts. It sorts the fetched data alphabetically by name and updates the APIdata and filteredData state variables
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. The findContact function is called whenever the user types in the search input. It filters the APIdata based on the search input and updates the filteredData state accordingly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. The showContact function is called when a contact tab is clicked. It finds the corresponding contact from the filteredData based on the clicked contact's ID and updates the contact state variable. It also updates the CSS class of the selected contact tab to highlight it.
 
-### `npm run eject`
+5. The component renders a container with two main sections:
+    1. The left section displays the search input and the list of contact tabs. It maps over the filteredData and renders each contact as a clickable tab.
+    2. The right section displays the detailed information of the selected contact. It conditionally renders the contact information based on the contact state variable.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6. The component uses CSS classes to style the various elements and make the application visually appealing.
