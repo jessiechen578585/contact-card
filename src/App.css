@@ -12,9 +12,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
+    width: 35%;
     height: 50%;
-    margin-top: 5%;
+    margin-top: 2%;
     /* margin-left: 20%; */
 }
 
@@ -33,7 +33,7 @@
     align-items: center;
     margin: 1%;
     overflow-y: auto;
-    max-height: 550px;
+    max-height: 450px;
     max-width: 100%;
 }
 
@@ -118,7 +118,6 @@
     width: 60%;
     max-height: 90%;
     overflow-y: auto;
-    margin-top: 5%;
 }
 
 .contact-information {
@@ -132,10 +131,10 @@
 }
 
 .contact-information-name {
-    padding-top: 30px;
+    padding-top: 5%;
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 }
 
 .contact-information-company {
