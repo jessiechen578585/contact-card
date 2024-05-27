@@ -10,15 +10,16 @@ Write a responsive “Contacts” application that allows the user to browse the
 
 # Deployment Website:
 https://contact-card-eight.vercel.app/
+To find a specific contact, you can use the search bar to look up their name or details. Once you've located the desired contact card, click on it to view the full information. Alternatively, you can scroll through the list to browse all existing contacts.
 
 
-# Instruction on how to run the code
+# Instruction on how to run the code locally:
     1. Make sure you have Node.js and npm (Node Package Manager) installed on your machine: https://nodejs.org/en/download/package-manager 
-
     2. Install the required dependencies by running: npm install
     3. Start the development server: npm start ( or npm run dev)
     4. Open your browser and visit http://localhost:3000
 
+# Code explanation
 1. useState and useEffect are used from React to manage state and perform side effects
 
 2. useEffect is used to fetch the contacts from the API (https://jsonplaceholder.typicode.com/users) when the component mounts. It sorts the fetched data alphabetically by name and updates the APIdata and filteredData state variables
